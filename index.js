@@ -40,7 +40,7 @@ app.get('/komiks', async (req, res) => {
     }
 })
 
-app.get('/komiks/:id', async (req, res) => {
+app.put('/komiks/:id', async (req, res) => {
     const id = req.params.id;
     const data = req.body;
 
@@ -55,3 +55,4 @@ app.get('/komiks/:id', async (req, res) => {
         res.status(500).send(err);
     }
 })
+
